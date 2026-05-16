@@ -1,1 +1,28 @@
-
+{
+    "id": 62809982,
+    "name": "Thanatophobia",
+    "author": "ARtu",
+    "creators": [
+        "Kains",
+        "Maitnary",
+        "guleshelt",
+        "Chaeyeon",
+        "RealVet",
+        "Voltex",
+        "Zipixbox",
+        "itami",
+        "NaimNaro"
+    ],
+    "verifier": "ishowmonkeygmd",
+    "verification": "https://youtu.be/null",
+    "percentToQualify": 44,
+    "password": "Free Copy",
+    "records": [
+        {
+            "user": "dwunco",
+            "link": "https://youtu.be/null",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
