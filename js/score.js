@@ -11,15 +11,15 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 60) {
+    if (rank > 150) {
         return 0;
     }
-    if (rank > 30 && percent < 100) {
+    if (rank > 75 && percent < 100) {
         return 0;
     }
 
-    // NEW FORMULA: Steeper curve (Harder ranks give significantly more relative to easier ones)
-    let score = (-18.6 * Math.pow(rank - 1, 0.5) + 200) *
+    // NEW FORMULA: 500 points at #1, decaying exponentially to ~30 points at #60
+    let score = (500 * Math.exp(-0.04768 * (rank - 1))) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
 
     score = Math.max(0, score);
