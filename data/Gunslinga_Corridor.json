@@ -11,13 +11,13 @@
     ],
     "verifier": "cookiedarookie",
     "verification": "https://youtu.be/rrCnjdytyHs",
-    "percentToQualify": 55,
+    "percentToQualify": 76,
     "password": "867354",
     "records": [
         {
             "user": "dwunco",
             "link": "https://youtu.be/null",
-            "percent": 62,
+            "percent": 100,
             "hz": 240
         }
     ]
