@@ -94,3 +94,9 @@ input[type="checkbox"] {
     cursor: pointer;
     margin: 0;
 }
+
+.verifier-record {
+    color: #ffd700 !important; /* Gold color */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.3); /* Optional: slight gold glow */
+}
