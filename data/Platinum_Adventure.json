@@ -7,5 +7,13 @@
     "verification": "https://youtu.be/vKIo0d3a9bA",
     "percentToQualify": 100,
     "password": "0000",
-    "records": []
+    "records": [
+        {
+            "user": "PixelPro11",
+            "link": "https://youtu.be/null",
+            "percent": 100,
+            "hz": 60,
+            "mobile": true
+        }
+    ]
 }
