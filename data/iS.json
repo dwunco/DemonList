@@ -1,1 +1,19 @@
 
+{
+    "id": 65765662,
+    "name": "iS",
+    "author": "Grenate",
+    "creators": ["Grenate"],
+    "verifier": "cookiedarookie",
+    "verification": "https://youtu.be/Kew8qqQEWdk",
+    "percentToQualify": 100,
+    "password": "Free Copy",
+    "records": [
+        {
+            "user": "dwunco",
+            "link": "https://youtu.be/null",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}
