@@ -7,5 +7,12 @@
     "verification": "https://youtu.be/TRcvzgpTMO8",
     "percentToQualify": 100,
     "password": "Free Copy",
-    "records": []
+    "records": [
+        {
+            "user": "cookiedarookie",
+            "link": "https://youtu.be/null",
+            "percent": 100,
+            "hz": 144
+        }
+    ]
 }
