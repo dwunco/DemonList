@@ -3,17 +3,23 @@
     "name": "iSpyWithMyLittleEye",
     "author": "Voxicat",
     "creators": ["Voxicat"],
-    "verifier": "dwunco",
+    "verifier": "PixelPro11",
     "verification": "https://youtu.be/Ow7nDnZTbDw",
     "percentToQualify": 100,
     "password": "420420",
     "records": [
         {
-            "user": "PixelPro11",
+            "user": "aCUB3R",
             "link": "https://youtu.be/null",
             "percent": 100,
             "hz": 60,
             "mobile": true
+        },
+        {
+            "user": "dwunco",
+            "link": "https://youtu.be/null",
+            "percent": 100,
+            "hz": 60,
         }
     ]
 }
