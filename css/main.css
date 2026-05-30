@@ -121,3 +121,18 @@ tr.verifier-highlight .badge {
     opacity: 0.8;
     font-style: italic;
 }
+
+.list-header-row {
+    background-color: rgba(255, 255, 255, 0.05); /* Slight tint background */
+    pointer-events: none; /* Disables clicking on the label row */
+}
+
+.list-header-label {
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #999; /* Muted gray text color */
+    text-align: center;
+}
