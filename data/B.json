@@ -8,7 +8,7 @@
     ],
     "verifier": "dwunco",
     "verification": "https://youtu.be/vtLGX7XiAUk",
-    "percentToQualify": 100,
+    "percentToQualify": 71,
     "password": "Free Copy",
     "records": [
         {
@@ -40,6 +40,12 @@
             "link": "https://youtu.be/null",
             "percent": 100,
             "hz": 144
+        },
+        {
+            "user": "Jamo1886",
+            "link": "https://youtu.be/null",
+            "percent": 71,
+            "hz": 60
         }
     ]
 }
