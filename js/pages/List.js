@@ -23,17 +23,32 @@ export default {
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list">
-                        <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
-                        </td>
-                        <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <button @click="selected = i">
-                                <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </button>
-                        </td>
-                    </tr>
+                    <template v-for="([level, err], i) in list">
+                        
+                        <tr v-if="i === 0" class="list-header-row">
+                            <td colspan="2" class="list-header-label">Main List</td>
+                        </tr>
+
+                        <tr v-slot v-if="i === 75" class="list-header-row">
+                            <td colspan="2" class="list-header-label">Extended List</td>
+                        </tr>
+
+                        <tr v-if="i === 150" class="list-header-row">
+                            <td colspan="2" class="list-header-label">Extended+ List</td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">
+                                <p v-if="i + 1 <= 250" class="type-label-lg">#{{ i + 1 }}</p>
+                                <p v-else class="type-label-lg">Legacy</p>
+                            </td>
+                            <td class="level" :class="{ 'active': selected == i, 'error': !level }">
+                                <button @click="selected = i">
+                                    <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </template>
                 </table>
             </div>
             <div class="level-container">
@@ -57,7 +72,7 @@ export default {
                     </ul>
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else-if="selected +1 <= 250"><strong>100%</strong> or better to qualify</p>
+                    <p v-else-if="selected + 1 <= 250"><strong>100%</strong> or better to qualify</p>
                     <p v-else>This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
