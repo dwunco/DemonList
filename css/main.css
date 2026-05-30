@@ -122,17 +122,20 @@ tr.verifier-highlight .badge {
     font-style: italic;
 }
 
+/* Container row for the list headers */
 .list-header-row {
-    background-color: rgba(255, 255, 255, 0.05); /* Slight tint background */
-    pointer-events: none; /* Disables clicking on the label row */
+    background-color: rgba(255, 255, 255, 0.03); /* Subtle dark tint */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none; /* Makes it so users can't accidentally click them */
 }
 
+/* The actual text inside the header */
 .list-header-label {
-    padding: 10px;
-    font-weight: bold;
+    padding: 12px 10px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    color: #999; /* Muted gray text color */
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    color: #ffb200; /* A nice gold/orange accent color (change to match your theme!) */
     text-align: center;
 }
